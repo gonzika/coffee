@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Miso", Arial;
 }
 
 a, button {
@@ -11,10 +10,11 @@ a, button {
 
 body {
     background-color: #fdde7e;
+    font-family: "Miso", Arial;
 }
 
 .container {
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     padding: 0px 2.5%;
     display: flex;
@@ -24,16 +24,18 @@ body {
 
 .slide {
     width: 30%;
-    height: 74vh;
     background-color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all .3s ease-in-out;
+    padding: 15px;
 }
 
 .slide:hover {
-    height: 83vh;
+    padding: 20px 2.5%;
+    transition: all .3s ease-in-out;
 }
 
 .price {
@@ -42,8 +44,7 @@ body {
     font-weight: bold;
     line-height: 0.343;
     text-align: center;
-    height: 33.33%;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .slide__flex {
@@ -51,11 +52,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 
-.slide__flex h1 {
+.slide__flex h2 {
     font-size: 56px;
     color: rgb(51, 51, 51);
     line-height: 0.429;
